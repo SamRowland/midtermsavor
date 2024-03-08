@@ -1,10 +1,10 @@
 { 
     "recipes" : [
         {
-            "recipeName" : "Fettucine",
+            "recipeName" : "Fettuccine",
             "author" : "John Smith",
             "uploadDate" : "3/3/2024",
-            "imagesrc" : "",
+            "imagesrc" : "./images/fettuccine.jpg",
             "prepTime" : "25-37 minutes",
             "ingredients" : 
                 ["12 oz (340g) fettuccine pasta",
@@ -29,7 +29,7 @@
             "recipeName" : "Pepperoni Lasagna",
             "author" : "John Smith",
             "uploadDate" : "3/3/2024",
-            "imagesrc" : "",
+            "imagesrc" : "./images/pepperoni lasagna.jpg",
             "prepTime" : "70-92 minutes",
             "ingredients" : 
                 ["9 lasagna noodles",
@@ -64,7 +64,7 @@
             "recipeName" : "Baked Chicken with Spinach Stuffing",
             "author" : "John Smith",
             "uploadDate" : "3/3/2024",
-            "imagesrc" : "",
+            "imagesrc" : "./images/baked chicken.jpeg",
             "prepTime" : "50-62 minutes",
             "ingredients" : 
                 ["4 boneless, skinless chicken breasts",
