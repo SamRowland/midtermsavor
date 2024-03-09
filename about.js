@@ -15,7 +15,7 @@ function loadMembers(membersList) {
         memberDiv.className = "member";
         var imageDiv = document.createElement("div");
         imageDiv.className = "image";
-        imageDiv.innerHTML = `<img src="${imagesrc}" width=${imagewidth} height=${imageheight}></img>`
+        imageDiv.innerHTML = `<img src="${imagesrc}" width= "100%" height= "500px"></img>`
         var textDiv = document.createElement("div");
         textDiv.className = "text";
         textDiv.insertAdjacentHTML("beforeend",`
@@ -23,8 +23,7 @@ function loadMembers(membersList) {
         <p>${major}</p>
         <p>${description}</p>`);
         memberDiv.appendChild(imageDiv); 
-        memberDiv.appendChild(textDiv);
-        
+        memberDiv.appendChild(textDiv);     
         mainContainer.appendChild(memberDiv);
     }
 }

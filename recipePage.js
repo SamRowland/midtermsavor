@@ -1,10 +1,18 @@
-
 fetch("./recipes.json")
 .then(response => response.json())
-.then(recipesList => loadRecipe(recipesList));
+.then(recipesList => loadRecipe12(recipesList, "Fettuccine"));
 
-function loadRecipe(recipesList) {
-    var searchedRecipe = "Pepperoni Lasagna";
+// Set the recipe in the URL
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('recipe');
+
+function loadRecipe12(recipesList,searchedRecipe) {
+    // var searchedRecipe = "Pepperoni Lasagna";
+    // alert(searchedRecipe)
+    if (myParam) {
+        searchedRecipe = myParam
+    }
+
     var mainContainer = document.getElementById("recipe");
     for (var i = 0; i < recipesList.recipes.length; i++) {
         // Load recipe information from a JSON file

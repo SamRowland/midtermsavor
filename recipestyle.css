@@ -3,12 +3,25 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+/* body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
   }
+   */
+
+  *{
+    box-sizing:border-box;
+    margin:0;
+    padding: 5px 5px;
+  }
   
+ body {
+  
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+    
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */

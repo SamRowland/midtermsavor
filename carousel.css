@@ -4,15 +4,12 @@
 *{
   box-sizing:border-box;
   margin:0;
-  padding:0;
+  padding: 5px 5px;
 }
 
 body {
-
-  padding-top: 3rem;
   padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
-  
+  color: rgb(var(--bs-tertiary-color-rgb)); 
 }
 
 
@@ -28,20 +25,30 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  font-size: medium;
+  color: black;
+  position: absolute;
+  right: 15%;
+  bottom: 5rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 40rem;
-  width: 80rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
 }
 
 .carousel-inner {
   img {
-    width : 100%;
-    height: 100%;
+    width : 60rem;
+    height: 40rem;
     opacity: 0.9;
   }
 }
@@ -52,16 +59,36 @@ body {
 
 .carousel-control-prev,
 .carousel-control-next {
-  padding: 10px; /* Adjust padding as needed */
-  z-index: 1; /* Ensure buttons appear above the image */
+  padding: 10px;
+  z-index: 1;
+  width: 40%; /* Set a fixed width for the controls */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  padding: 10px; /* Adjust padding as needed */
+/* #carousel-control-prev-icon,
+#carousel-control-next-icon{
+  color: blueviolet;
+  background-image: none;
 }
 
+#carousel-control-prev-icon:after,
+#carousel-control-next-icon:after {
+  padding: 3px;
+  color: blueviolet;
+  background-color: blueviolet;
+  font-size: 55px;
+} */
 
+/* #carousel-control-prev-icon:after {
+  content: '<';
+}
+
+#carousel-control-next-icon:after {
+  content: '>';
+} */
+
+.button{
+  padding-bottom: 5%;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -114,4 +141,15 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+.recipe-image {
+  display: block;
+  margin: auto auto;
+  max-width: 70%;
+  height: auto;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
 }
