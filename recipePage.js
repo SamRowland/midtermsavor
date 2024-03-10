@@ -68,6 +68,8 @@ function loadRecipe12(recipesList,searchedRecipe) {
             recipeContainer.appendChild(ingredientDiv);
             recipeContainer.appendChild(instructionDiv);
             mainContainer.replaceChildren(recipeContainer);
+            return;
         }
     }
+        mainContainer.innerHTML = `<h1> Recipe "${searchedRecipe}" not found.</h1>`;
 }
