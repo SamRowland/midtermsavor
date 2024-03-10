@@ -1,4 +1,4 @@
-fetch("./recipes.json")
+fetch("./data.json")
 .then(response => response.json())
 .then(recipesList => loadRecipe12(recipesList, "Fettuccine"));
 
